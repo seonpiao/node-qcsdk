@@ -1,0 +1,45 @@
+.spinner
+  color: $grayLight
+  font-style: italic
+
+.loading
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-top: -8px
+  margin-left: -28px
+
+.bubbling
+  text-align: center
+  width: 38px
+  height: 24px
+  span
+    display: inline-block
+    vertical-align: middle
+    width: 5px
+    height: 5px
+    margin: 12px auto
+    background: $themeColor
+    border-radius(24px)
+    animation(bubbling 0.6s infinite alternate)
+
+#bubbling_1
+  animation-delay(0s)
+
+#bubbling_2 
+  animation-delay(0.18s)
+
+#bubbling_3
+  animation-delay(0.36s)
+
+@keyframes bubbling
+  0%
+    width: 5px
+    height: 5px
+    background-color: $themeColor
+    transform(translateY(0))
+  100%
+    width: 11px;
+    height: 11px;
+    background-color: transparent
+    transform(translateY(-10px))

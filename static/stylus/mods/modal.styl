@@ -1,0 +1,94 @@
+.window-overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background: rgba($black, 0.5)
+  z-index: 101
+
+.modal
+  position: absolute
+  top: 50%
+  left: 50%
+  background: $modalBackground
+  z-index: 1000
+  min-height: 150px
+
+.modal-header
+  position: relative
+  overflow: hidden
+  font-size: 20px
+  border-bottom: 1px solid darken($grayLighter, 10%)
+  background: $grayLighter
+  h4
+    padding: 30px
+    margin: 0
+  .close
+    position: absolute
+    color: $gray
+    top: 27px
+    right: 34px
+    width: 18px
+    height: 18px
+    &:hover
+      color: $grayLight
+
+.modal-content
+  background: $white
+  overflow: hidden
+  padding: 30px
+  .spinner
+    margin: 0 auto
+
+.dialog
+  .modal-header
+    h4
+      font-size: $baseFontSize + 4
+      padding: 20px
+      background: $grayDarker
+      color: $white
+      .close
+        color: $grayLighter
+        top: 17px
+        right: 15px
+        &:hover
+          color: $white
+  .modal-content
+    padding: 0
+    background: $white
+    form
+      margin: 0
+      padding-top: 30px
+      .form-actions
+        margin-top: 30px
+        padding: 20px 20px 20px 140px
+        .btn
+          padding: 8px 18px
+          font-size: $baseFontSize + 4
+.confirm
+  .modal-header
+    h4
+      font-size: $baseFontSize + 4
+      padding: 20px
+      .close
+        color: $gray
+        top: 17px
+        right: 15px
+        &:hover
+          color: $grayDark
+  .btn
+    float: right
+.confirm-info
+  h4
+    background: $infoBackground
+    color: $infoText
+.confirm-success
+  h4
+    background: $successBackground
+    color: $succesText
+.confirm-error
+  h4
+    background: $errorBackground
+    color: $errorText

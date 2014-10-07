@@ -1,0 +1,45 @@
+.btn
+  display: inline-block
+  padding: 7px 16px
+  margin: 0 3px 0 0
+  font-family: $baseFontFamily
+  font-size: $baseFontSize
+  text-align: center
+  vertical-align: middle
+  cursor: pointer
+  background: $btnBackground
+  color: $btnText
+  border: 0 none
+  -webkit-appearance: none
+  border-radius(3px)
+  &:hover
+    color: darken(@color, 5%)
+    background: darken(@background, 5%)
+    text-decoration: none
+  [class^="icon-"], [class*=" icon-"]
+    vertical-align: top
+
+.btn-small
+  padding: 4px 8px
+
+.btn-primary
+  background: $btnPrimaryBackground
+  color: $btnPrimaryText
+  &:hover
+    background: $btnPrimaryBackgroundDarker
+.btn-loading
+  background: $btnLoadingBackground
+  color: $btnLoadingText
+  &:hover
+    background: $btnLoadingBackgroundDarker
+.btn-forbidden
+  background: $btnForbiddenBackground
+  color: $btnForbiddenText
+  &:hover
+    background: @background
+.btn-cancel
+  background: none
+  color: $btnCancelText
+  &:hover
+    background: $btnCancelBackgroundDarker
+    color: darken(@color, 20%)

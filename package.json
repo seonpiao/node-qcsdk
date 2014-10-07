@@ -1,0 +1,45 @@
+{
+  "name": "qingcloud-nodejs",
+  "version": "0.0.3",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.3.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-cssmin": "~0.5.0",
+    "grunt-contrib-stylus": "~0.4.1",
+    "grunt-ozjs": "~0.2.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-internal": "~0.1.2",
+    "grunt-istatic": "~0.1.0"
+  },
+  "dependencies": {
+    "seajs": "*",
+    "request": "*",
+    "mocha": "*",
+    "express": "*",
+    "jade": "*",
+    "uglify-js": "*",
+    "node.extend": "*"
+  },
+  "main": "sdk-node",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@dev.yunify.com:/data/gitrepos/pitrix-website.git"
+  },
+  "keywords": [
+    "yunify"
+  ],
+  "author": {
+    "name": "yunify"
+  },
+  "license": "BSD",
+  "readme": "ERROR: No README data found!",
+  "_id": "qingcloud-nodejs@0.0.1",
+  "_shasum": "6928be27d7d0abb6c894dc719c2fa08febe6a76b",
+  "_from": "qingcloud-nodejs@*"
+}

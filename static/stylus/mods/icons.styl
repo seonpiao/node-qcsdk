@@ -1,0 +1,210 @@
+[class^="icon-"], [class*=" icon-"]
+  vertical-align: middle
+  font-size: $baseFontSize + 2
+
+[class^="icon-Large"], [class*=" icon-Large"]
+  font-size: $baseFontSize * 2
+
+[class^="icon-"]:after, [class*=" icon-"]:after,
+[class^="icon-"]:before, [class*=" icon-"]:before
+  font-family: Entypo
+  font-weight: normal
+  font-style: normal
+  text-align: center
+  display: inline-block
+  width: 1em
+  text-decoration: none
+
+.icon-zone::before
+  content: '\e724'
+.icon-globle::before
+  content: '\E776'
+.icon-logout::before
+  content: '\E741'
+.icon-settings::before
+  content: '\2699'
+.icon-global::before
+  content: '\1f30e'
+
+.icon-instances::before
+  content: 'A'
+.icon-volumes::before
+  content: '\e755'
+.icon-images::before
+  content: 'E'
+.icon-eips::before
+  content: '\E776'
+.icon-vxnets::before
+  content: '\21C6'
+.icon-routers::before
+  content: '\1F4F6'
+.icon-loadbalancers::before
+  content: '\1F500'
+.icon-security_groups::before
+  content: '\26A1'
+.icon-keypairs::before,
+.icon-access_keys::before
+  content: 'F'
+
+.icon-bots::before
+  content: 'L'
+.icon-jobs::before
+  content: 'B'
+.icon-tasks::before
+  content: '\1f4bc'
+.icon-hyper_nodes::before
+  content: '\e78d'
+.icon-eip_groups::before
+  content: '\e790'
+.icon-eip_pool::before
+  content: '\e753'
+.icon-global_quotas::before,
+.icon-quotas::before
+  content: '\e738'
+.icon-zoneKS::before
+  content: '\2601'
+.icon-users::before
+  content: 'J'
+.icon-tickets::before
+  content: '\E704'
+.icon-zones::before
+  content: '\e724'
+.icon-instance_types::before
+  content: 'K'
+.icon-online_price::before
+  content: '\E70C'
+.icon-prices::before
+  content: '\E005'
+.icon-consoles::before
+  content: '\E70A'
+.icon-console_keys::before
+  content: '\E70A'
+.icon-recharge_records::before
+.icon-trades::before
+  content: '\43'
+.icon-invoices::before
+  content: '\43'
+.icon-email_jobs::before
+  content: '\2709'
+.icon-sms_jobs::before
+  content: '\1F4F1'
+.icon-prev::before
+  content: '\E75D'
+.icon-next::before
+  content: '\E75E'
+.icon-close::before
+  content: '\2715'
+.icon-reply::before
+  content: '\E718'
+.icon-closed::before
+  content: 'I'
+.icon-lock::before
+  content: '\1F512'
+.icon-unlock::before
+  content: '\1F513'
+.icon-time::before
+  content: '\1F4C5'
+.icon-load::before
+  content: '\2605'
+.icon-register::before,
+.icon-create::before
+  content: '\2b'
+.icon-deregister::before
+.icon-delete::before
+  content: '\E729'
+.icon-enable::before,
+.icon-active::before
+  content: '\2713'
+.icon-disable::before
+  content: 'I'
+.icon-edit::before
+  content: '\270E'
+.icon-restore::before
+  content: '\E771'
+.icon-status
+  display: inline-block
+  border-radius(25px);
+  height: 10px
+  width: 10px
+  border-width: 3px
+  border-style: solid
+  vertical-align: middle
+.icon-status,
+.summary-number
+  &.icon-successful,
+  &.icon-available,
+  &.icon-running,
+  &.icon-active,
+  &.icon-open,
+  &.icon-success,
+  &.icon-succeeded,
+  &.icon-delivered,
+  &.icon-up
+    color: $successText
+    background: $successText
+    border-color: $successBackground
+
+  &.icon-failed,
+  &.icon-ceased,
+  &.icon-released,
+  &.icon-done.with.failure,
+  &.icon-deleted,
+  &.icon-terminated,
+  &.icon-faulty,
+  &.icon-rejected,
+  &.icon-disabled,
+  &.icon-refund
+    color: $errorText
+    background: $errorText
+    border-color: $errorBackground
+
+  &.icon-deleting,
+  &.icon-resetting,
+  &.icon-recovering,
+  &.icon-terminating,
+  &.icon-creating,
+  &.icon-starting,
+  &.icon-restarting,
+  &.icon-working,
+  &.icon-stopping,
+  &.icon-stopped,
+  &.icon-attaching,
+  &.icon-detaching,
+  &.icon-error,
+  &.icon-poweroffed,
+  &.icon-abnormal,
+  &.icon-rescuing,
+  &.icon-accepted
+    color: $warningText
+    background: $warningText
+    border-color: $warningBackground
+
+  &.icon-in-use,
+  &.icon-associated,
+  &.icon-status.icon-pending,
+  &.icon-occupied,
+  &.icon-initial,
+  &.icon-in-progress,
+  &.icon-standby,
+  &.icon-pending
+    color: $infoText
+    background: $infoText
+    border-color: $infoBackground
+
+  &.icon-force,
+  &.icon-wait_icp,
+  &.icon-very_icp,
+  &.icon-very_icp_fail,
+  &.icon-suspending,
+  &.icon-suspended,
+  &.icon-resuming,
+  &.icon-closed,
+  &.icon-inactive,
+  &.icon-deprecated,
+  &.icon-down
+    color: $grayLight
+    background: $grayLight
+    border-color: $grayLighter
+  &.icon-active::before,
+  &.icon-closed::before
+    content: ''

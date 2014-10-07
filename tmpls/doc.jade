@@ -1,0 +1,86 @@
+h1 
+  = title
+div.class-desc
+  - if(desc.join) desc = desc.join('')
+  != desc
+
+mixin method(type,methodSet)
+  h1.title 
+    = type + ' Methods'
+  each item in methodSet
+    div.method
+      h1
+        if item.name
+          = item.name
+          span.normal
+            = item.proto
+        else 
+          = item.proto
+      div.desc
+        - if(item.desc.join) item.desc = item.desc.join('')
+        = item.desc
+      if item.demo
+        pre.demo.highlight
+          - if(item.demo.join) item.demo = item.demo.join('')
+          = beautify(item.demo)
+    ul.param-list
+      each param in item.params
+        li
+          div.param
+            h2
+              = param.name
+              if param.type === 'Function'
+                span.normal
+                  = param.proto
+              span.normal
+                = '(' + param.type + ', ' + (param.required ? 'Required' : 'Optional') + ')'
+          div.detail
+            div
+              = param.desc
+            if param.type === 'Object' && param.members
+              div
+                div.param-detail
+                  table.table.table-bordered.table-hover
+                    thead
+                      tr
+                        th 名称
+                        th 描述
+                        th 类型
+                        th 必选
+                    tbody
+                      each member in param.members
+                        tr
+                          td
+                            = member.name
+                          td
+                            = member.desc
+                          td
+                            = member.type
+                          td
+                            if member.required
+                              span 是
+                            else
+                              span 否
+            if param.type === 'Function' && param.params
+              div.param-detail
+                table.table.table-bordered.table-hover
+                  thead
+                    tr
+                      th 名称
+                      th 类型
+                      th 描述
+                  tbody
+                    each p in param.params
+                      tr
+                        td
+                          = p.name
+                        td
+                          = p.type
+                        td
+                          = p.desc
+div#constructor.method-set
+  +method('constructor',constructor)
+div#static.method-set
+  +method('static',static)
+div#public.method-set
+  +method('public',public)

@@ -1,0 +1,63 @@
+.id
+  font-family: $monoFontFamily
+  background: $grayLighter
+  padding: 3px 4px
+  border-radius(3px)
+span.id
+  color: $linkColor
+  &:hover
+    color: $linkColorHover
+    transition(color 0.2s ease-in)
+.none,
+.time,
+.unit
+  color: $grayLight
+.time,
+.none
+  font-style: italic
+.failed
+  color: $errorText
+
+span.price-number
+  font-size: $baseFontSize + 2
+  font-family: $priceFontFamily
+  font-weight: bolder
+  color: $successText
+  &.discharge
+    color: $errorText
+  &.bonus
+    color: $grayLight
+
+span.price-unit
+  font-size: $baseFontSize
+  color: $grayLight
+  font-style: italic
+  padding: 0 8px
+
+dl
+  margin-bottom: $baseLineHeight * 2
+dt,
+dd
+  line-height: $baseLineHeight
+  min-height: $baseLineHeight
+dt
+  font-family: $boldFontFamily
+  font-weight: normal
+dd
+  word-break: break-all
+
+.dl-horizontal
+  dt, dd
+    padding: 10px
+  dt
+    float: left
+    width: 120px
+    clear: left
+    text-align: left 
+    text-overflow()
+  dd
+    padding-left: 150px
+    margin: 0
+    border: 1px solid darken($grayLighter, 10%)
+
+
